@@ -1,9 +1,11 @@
-FROM node:10-alpine
+FROM node:12.18.1-alpine
 WORKDIR /app
 COPY package.json .
-RUN npm install
+RUN npm install pm2 -g
 COPY index.js .
-CMD ["node", "index.js"]
 
-# heroku container:push web -a APP_NAME
-# heroku container:release web -a APP_NAME
+ENV NODE_ENV=production
+CMD ["pm2-runtime", "app.js"]
+
+# heroku container:push web -a young-reef-62489
+# heroku container:release web -a young-reef-62489
