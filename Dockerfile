@@ -13,6 +13,3 @@ RUN npm install --production
 RUN ls -al -R
 
 CMD [ "pm2-runtime", "start", "pm2.json" ]
-
-# heroku container:push web -a young-reef-62489
-# heroku container:release web -a young-reef-62489
