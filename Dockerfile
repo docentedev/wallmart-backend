@@ -1,11 +1,18 @@
-FROM node:lts-alpine3.10
-WORKDIR /app
-COPY package.json .
-RUN npm install pm2 -g
-COPY index.js .
+FROM keymetrics/pm2:latest-alpine
 
-ENV NODE_ENV=production
-CMD ["pm2-runtime", "app.js"]
+# Bundle APP files
+COPY src src/
+COPY package.json .
+COPY pm2.json .
+
+# Install app dependencies
+ENV NPM_CONFIG_LOGLEVEL warn
+RUN npm install --production
+
+# Show current folder structure in logs
+RUN ls -al -R
+
+CMD [ "pm2-runtime", "start", "pm2.json" ]
 
 # heroku container:push web -a young-reef-62489
 # heroku container:release web -a young-reef-62489
