@@ -6,7 +6,7 @@ module.exports = (app) => {
     router.get('/', async (_, res) => {
         try {
             const products = await productsData.getAll()
-            res.json({ data: products })
+            res.json({ data: products.map(p => ({ ...p, image: `https://${p.image}` })) })
         } catch (e) {
             res.status(500).json({ message: e.message })
         }
