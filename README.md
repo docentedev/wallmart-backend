@@ -9,7 +9,8 @@
 
 ## Web
 
-[Web](https://young-reef-62489.herokuapp.com/)
+[healthcheck](https://young-reef-62489.herokuapp.com/health)
+[api v1 products](https://young-reef-62489.herokuapp.com/api/v1/products)
 
 ## Repo
 
