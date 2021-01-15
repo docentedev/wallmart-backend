@@ -1,11 +1,11 @@
-var express = require('express');
+const express = require('express')
 
-module.exports = function(app) {
-  var router = express.Router();
+module.exports = (app) => {
+  const router = express.Router()
 
-  router.get('/', function (req, res, next) {
-    res.json({status: 'UP'});
-  });
+  router.get('/', (_, res) => {
+    res.json({ status: 'UP' })
+  })
 
-  app.use("/health", router);
+  app.use('/health', router)
 }
