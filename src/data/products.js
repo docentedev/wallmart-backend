@@ -1,8 +1,19 @@
 const client = require('./client')
 
-const getAll = async () => {
+/**
+ * @typedef {Object} Query
+ * @property {string} brand
+ */
+
+/**
+ * { brand: 'Marca1' }
+ * @param {Query} query 
+ */
+const getAll = async (query) => {
     try {
-        const cursor = await client.db().collection('products').find({})
+        const q = {}
+        query.brand && (q['brand'] = query.brand)
+        const cursor = await client.db().collection('products').find(q)
         const results = await cursor.toArray()
         return results
     } catch (_) {
