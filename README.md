@@ -30,7 +30,6 @@ Backend Service to Wallmart Test
 define next enviroment vars
 
 ```env
-MONGODB_PASSWORD=********
-MONGODB_USER=mongodb-user
-MONGODB_CLUSTER=clusterN.hash.mongodb.net
+PORT=<number port>
+DATABASE_URL=mongodb+srv://mongo-user:password@cluster/wallmart?retryWrites=true&w=majority
 ```
