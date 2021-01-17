@@ -12,11 +12,12 @@ const client = require('./client')
 const getAll = async (query) => {
     try {
         const q = {}
-        query.brand && (q['brand'] = query.brand)
+        query && query.brand && (q['brand'] = query.brand)
         const cursor = await client.db().collection('products').find(q)
         const results = await cursor.toArray()
         return results
-    } catch (_) {
+    } catch (e) {
+        console.log(e)
         throw new Error('products.getAll error');
     }
 }

@@ -5,7 +5,8 @@ const getAll = async () => {
         const cursor = await client.db().collection('discounts').find({})
         const results = await cursor.toArray()
         return results
-    } catch (_) {
+    } catch (e) {
+        console.log(e)
         throw new Error('discounts.getAll error');
     }
 }
