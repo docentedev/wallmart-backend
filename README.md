@@ -2,6 +2,8 @@
 
 Backend Service to Wallmart Test
 
+Install dependencies with `npm install`
+
 ## Deploy on Heroku
 
 - heroku container:push web -a young-reef-62489
@@ -16,6 +18,12 @@ Backend Service to Wallmart Test
 [products](https://young-reef-62489.herokuapp.com/api/v1/products)
 
 [discoints](https://young-reef-62489.herokuapp.com/api/v1/discounts)
+
+
+## NPM scripts
+
+- start `npm run dev`
+- test `npm run test`
 
 ## Repo
 
