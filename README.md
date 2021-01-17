@@ -2,6 +2,7 @@
 
 [![docentedev](https://circleci.com/gh/docentedev/wallmart-backend/tree/main.svg?style=svg)](https://circleci.com/gh/docentedev/wallmart-backend)
 [![codecov](https://codecov.io/gh/docentedev/wallmart-backend/branch/main/graph/badge.svg?token=KMAHZ7P48O)](https://codecov.io/gh/docentedev/wallmart-backend)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 Backend Service to Wallmart Test
 
