@@ -1,5 +1,7 @@
 # wallmart-devserver
 
+[![docentedev](https://circleci.com/gh/docentedev/wallmart-backend/tree/main.svg?style=svg)](https://circleci.com/gh/docentedev/wallmart-backend)
+
 Backend Service to Wallmart Test
 
 Install dependencies with `npm install`
