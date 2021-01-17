@@ -1,6 +1,6 @@
 {
-    "name": "your-app-name",
-    "script": "src/index.js",
+    "name": "wallmart-backend-app",
+    "script": "index.js",
     "instances": "2",
     "env": {
       "NODE_ENV": "development"
