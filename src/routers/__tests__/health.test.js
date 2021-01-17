@@ -1,5 +1,8 @@
 const request = require('supertest')
 const app = require('../../server')
+
+jest.mock('../../data/client')
+
 describe('Post Endpoints', () => {
   it('should create a new post', async () => {
     const res = await request(app)
