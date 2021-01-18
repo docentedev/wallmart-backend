@@ -1,4 +1,4 @@
-# wallmart-devserver
+# Wallmart Backend
 
 [![docentedev](https://circleci.com/gh/docentedev/wallmart-backend/tree/main.svg?style=svg)](https://circleci.com/gh/docentedev/wallmart-backend)
 [![codecov](https://codecov.io/gh/docentedev/wallmart-backend/branch/main/graph/badge.svg?token=KMAHZ7P48O)](https://codecov.io/gh/docentedev/wallmart-backend)
@@ -6,42 +6,41 @@
 
 Backend Service to Wallmart Test
 
-Install dependencies with `npm install`
+[Demo Project](https://young-reef-62489.herokuapp.com/api/v1/discounts)
+
+## Init project
+
+1. Install dependencies with `npm install`
+2. Define env vars
+
+    ```env
+    PORT=<number port>
+    DATABASE_URL=mongodb+srv://mongo-user:password@cluster/wallmart?retryWrites=true&w=majority
+    ```
+
+3. Start:
+   - Devserver `npm run dev`
+   - Docker `docker-compose -f "docker-compose.yml" up -d --build`
+
+## Run Test & Integration Test
+
+- `npm run test`
 
 ## Deploy on Heroku
 
 - heroku container:push web -a young-reef-62489
 - heroku container:release web -a young-reef-62489
 
-## Web
+## API Endpoints
 
-[healthcheck](https://young-reef-62489.herokuapp.com/health)
+- [healthcheck](https://young-reef-62489.herokuapp.com/health)
+- [products](https://young-reef-62489.herokuapp.com/api/v1/products)
+- [discoints](https://young-reef-62489.herokuapp.com/api/v1/discounts)
 
-### api v1
-
-[products](https://young-reef-62489.herokuapp.com/api/v1/products)
-
-[discoints](https://young-reef-62489.herokuapp.com/api/v1/discounts)
-
-
-## NPM scripts
-
-- start `npm run dev`
-- test `npm run test`
-
-## Repo
+## Repository url
 
 [Repo](https://github.com/docentedev/wallmart-devserver)
 
 ## DB Access
 
 [go to db](https://cloud.mongodb.com/v2/6000dfe0eed5cd04c5b1ef72#clusters)
-
-## Enviroment
-
-define next enviroment vars
-
-```env
-PORT=<number port>
-DATABASE_URL=mongodb+srv://mongo-user:password@cluster/wallmart?retryWrites=true&w=majority
-```
