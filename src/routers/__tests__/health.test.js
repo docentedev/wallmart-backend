@@ -3,8 +3,8 @@ const app = require('../../server')
 
 jest.mock('../../data/client')
 
-describe('Post Endpoints', () => {
-  it('should create a new post', async () => {
+describe('Get Health', () => {
+  it('should get health servicer success', async () => {
     const res = await request(app)
       .get('/health')
       .send()
