@@ -2,10 +2,10 @@ version: '3.7'
 
 services:
 
-  wallmartbackend:
+  walmartbackend:
     env_file:
       - .env
-    container_name: wallmartbackend
+    container_name: walmartbackend
     build:
       context: .
       dockerfile: Dockerfile.dev

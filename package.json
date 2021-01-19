@@ -1,7 +1,7 @@
 {
-  "name": "wallmart-backend",
+  "name": "walmart-backend",
   "version": "1.0.0",
-  "description": "Wallmart Service",
+  "description": "Walmart Service",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon --watch src index.js",

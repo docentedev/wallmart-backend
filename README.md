@@ -1,10 +1,10 @@
-# Wallmart Backend
+# Walmart Backend
 
 [![docentedev](https://circleci.com/gh/docentedev/wallmart-backend/tree/main.svg?style=svg)](https://circleci.com/gh/docentedev/wallmart-backend)
 [![codecov](https://codecov.io/gh/docentedev/wallmart-backend/branch/main/graph/badge.svg?token=KMAHZ7P48O)](https://codecov.io/gh/docentedev/wallmart-backend)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-Backend Service to Wallmart Test
+Backend Service to Walmart Test
 
 [Demo Project](https://young-reef-62489.herokuapp.com/api/v1/discounts)
 
@@ -28,8 +28,8 @@ Backend Service to Wallmart Test
 
 ## Deploy on Heroku
 
-- heroku container:push web -a young-reef-62489
-- heroku container:release web -a young-reef-62489
+- Push last code: `heroku container:push web -a young-reef-62489`
+- Deploy last version: `heroku container:release web -a young-reef-62489`
 
 ## API Endpoints
 
