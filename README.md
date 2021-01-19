@@ -35,7 +35,7 @@ Backend Service to Walmart Test
 
 - [healthcheck](https://young-reef-62489.herokuapp.com/health)
 - [products](https://young-reef-62489.herokuapp.com/api/v1/products)
-- [discoints](https://young-reef-62489.herokuapp.com/api/v1/discounts)
+- [discounts](https://young-reef-62489.herokuapp.com/api/v1/discounts)
 
 ## Repository url
 
